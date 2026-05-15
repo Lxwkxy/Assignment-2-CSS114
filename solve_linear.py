@@ -1,5 +1,4 @@
 import numpy as np
-import sys
 
 class UltimatePivotingSolver:
     def __init__(self):
