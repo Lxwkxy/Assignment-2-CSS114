@@ -76,7 +76,8 @@ You can use these test cases to verify the correctness of the program for both d
   * **Diagonalization Status:** Matrix is Diagonalizable
   * **Matrices Created:**
     * **Matrix P (Modal Matrix)**
-    * **Matrix D (Diagonal Matrix):** ```text
+    * **Matrix D (Diagonal Matrix):** 
+    ```text
       [5  0]
       [0  2]
       ```
