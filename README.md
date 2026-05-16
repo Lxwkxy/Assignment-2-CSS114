@@ -55,8 +55,6 @@ The **`get_eigenvectors(A, eigenvalue)`** function solves the linear system $(A 
 
 ---
 
----
-
 ## Example Test Cases
 
 You can use these test cases to verify the correctness of the program for both diagonalizable and non-diagonalizable matrices.
@@ -95,8 +93,6 @@ You can use these test cases to verify the correctness of the program for both d
   * **Eigenvectors:** Only one linearly independent eigenvector can be found: [1, 0]
   * **Diagonalization Status:** Matrix is NOT Diagonalizable (Defective Matrix)
   * **Reasoning:** The number of linearly independent eigenvectors (1) is less than the dimension of the matrix (2). The program safely terminates the diagonalization process and displays an explanation.
-
----
 
 ---
 
