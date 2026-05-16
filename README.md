@@ -55,6 +55,8 @@ The **`get_eigenvectors(A, eigenvalue)`** function solves the linear system $(A 
 
 ---
 
+---
+
 ## Example Test Cases
 
 You can use these test cases to verify the correctness of the program for both diagonalizable and non-diagonalizable matrices.
@@ -67,15 +69,18 @@ You can use these test cases to verify the correctness of the program for both d
   2 3
   ```
 * **Expected Output:**
-  * **Eigenvalues ($\lambda$):** 5.0 and 2.0
+  * **Eigenvalues (λ):** 5.0 and 2.0
   * **Eigenvectors:**
-    * For $\lambda = 5$: $\begin{bmatrix} 1 \\ 1 \end{bmatrix}$ (or any scalar multiple)
-    * For $\lambda = 2$: $\begin{bmatrix} -0.5 \\ 1 \end{bmatrix}$ or $\begin{bmatrix} 1 \\ -2 \end{bmatrix}$
+    * For λ = 5: [1, 1] (or any scalar multiple)
+    * For λ = 2: [-0.5, 1] or [1, -2]
   * **Diagonalization Status:** Matrix is Diagonalizable
   * **Matrices Created:**
     * **Matrix P (Modal Matrix)**
-    * **Matrix D (Diagonal Matrix):** $\begin{bmatrix} 5 & 0 \\ 0 & 2 \end{bmatrix}$
-  * **Verification:** Checks if $P^{-1}AP = D$ holds true within a small precision tolerance.
+    * **Matrix D (Diagonal Matrix):** ```text
+      [5  0]
+      [0  2]
+      ```
+  * **Verification:** Checks if P^-1 * A * P = D holds true within a small precision tolerance.
 
 ### Case 2: Non-Diagonalizable (Defective) Matrix (2x2)
 * **Description:** A matrix that has repeated eigenvalues but lacks enough linearly independent eigenvectors to form the basis (Geometric Multiplicity < Algebraic Multiplicity).
@@ -85,10 +90,12 @@ You can use these test cases to verify the correctness of the program for both d
   0 3
   ```
 * **Expected Output:**
-  * **Eigenvalues ($\lambda$):** 3.0 and 3.0 (Repeated root)
-  * **Eigenvectors:** Only one linearly independent eigenvector can be found: $\begin{bmatrix} 1 \\ 0 \end{bmatrix}$
+  * **Eigenvalues (λ):** 3.0 and 3.0 (Repeated root)
+  * **Eigenvectors:** Only one linearly independent eigenvector can be found: [1, 0]
   * **Diagonalization Status:** Matrix is NOT Diagonalizable (Defective Matrix)
   * **Reasoning:** The number of linearly independent eigenvectors (1) is less than the dimension of the matrix (2). The program safely terminates the diagonalization process and displays an explanation.
+
+---
 
 ---
 
